@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0 auto;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+/*==============================CARD=================================*/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /*divide a tela em várias colunas de 250px para adaptar os cards, tornando a página responsiva*/
+    grid-gap: 45px;
+    padding-top: 30px;
+     margin-top: 30px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.059);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.265);
+   
+     
+}
+
+.card:active{
+    background-color: #f7941d;
+    color: white;
+    transform: scale(1.1);
+   
+}
+
+
+.card:active h2{
+    color: white;
+}
+
+
+.card-foto > img {
+    max-height: auto;
+    width: 70%;
+    margin-top: 50px;
+    object-fit: cover;
+  
+   
+  }
+
+  .card a{
+    text-decoration: none;
+  }
+
+.nome{
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+    
+}
+.nome, .descricao{
+    font-size: 1rem;
+    padding:15px 50px;
+}
+.descricao li{
+    list-style-position: inside;
+}
+
+
+/*.orcamento{
+    padding: 10px 40px;
+    text-decoration: none;
+    background-color: #73d4e8;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.orcamento:hover{
+    background-color: #189eb9;
+    color: aliceblue;
+    transition: all .10s linear;
+}
+
+*/
+/*==============================CARD FIM===============================*/
+  @media (max-width: 600px) {
+    nav{
+        height: 15%;
+        padding: 0;
+        justify-content: center;
+    }
+    .menu > li{
+        margin-top: 20px;
+        font-size: 1rem;
+        padding: 6px;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        margin-top: 17%;
+        padding: 0;
+    }
+    .card{
+       
+        width: 100%;
+        padding-bottom: 30px;
+        border-radius: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .card h3, p{
+        text-align: left;
+    }
+    .card-foto > img{
+        max-height: 270px;
+        margin-top: 10px ;
+        border-radius: 5px;
+        object-fit: cover;
+
+    }
+    .nome, .descricao{
+        font-size: 1rem;
+        padding:8px 12px;
+    }
+    .nome{
+        font-size: 1.5rem;
+      }
+    .descricao{
+        margin: 0 20px;
+        margin-bottom: 15px;
+    }
+    .descricao ul li{
+        list-style-position: inside;
+        margin-top: 6px;
+    }
+    .descricao ul{
+        columns: 2;
+    }
+  }

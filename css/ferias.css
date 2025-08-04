@@ -1,0 +1,284 @@
+/* - Montagem do corpo - */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.base {
+    height: fit-content;
+    max-width: 1080px;
+    margin: auto;
+    color: white;
+    background-color: rgb(254, 254, 254);
+    padding: 100px;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tudo {
+    text-align: center;
+}
+
+h1 {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 48px;
+
+}
+
+.cabeca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linha {
+    width: 100%;
+    border-bottom: 3px solid orange;
+}
+
+#organizacao_text{
+    width: 80%;
+    text-align: left;
+}
+
+#organizacao_text h2{
+    padding-top: 40px;
+    color: black;
+    font-size: 40px;
+}
+
+#organizacao_img{
+    width: 20%;
+    justify-content: right;
+}
+
+#organizacao_img img{
+    width: 130px;
+}
+
+#topico{
+    padding: 10px;
+    font-size: 30px;
+    background-color: #003f7b;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    width: 880px;
+}
+
+
+.todos{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    color: black;
+    margin-bottom: 30px;
+    gap: 400px;
+}
+
+.voltar{
+    width: 20%;
+    background-color: #003f7b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.265);
+    text-align: center;
+}
+
+.voltar a{
+    text-decoration: none;
+    color: black;
+}
+
+.voltar h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.selected {
+    box-shadow: 0 2px 2px rgba(158, 158, 158, 0.8);
+    color: #fff;
+    background-color: #0c3d6f;
+    border-radius: 5px;
+    text-align: center;
+    width: 40%;
+    border: 1px solid #0c3d6f;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.todos h2{
+    color: #fff;
+}
+
+.voltar:active{
+    background-color: #f7941d;
+    transform: scale(1.1);
+   
+}
+
+
+/* - Cursos relacionados a moda - */
+
+.moda {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 20px;
+    grid-template-columns: 260px 400px 190px;
+    padding: 10px 0px 10px 0px;
+    padding-top: 10px;
+}
+
+.cursagem {
+    width: 100%;
+    background-color: #f68b1f;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    font-size: 21px;
+    box-shadow: 0 0 4px rgb(43, 42, 42);
+}
+
+.infoCurso { 
+    text-align: center;
+    background-color: rgb(201, 198, 198);
+    border: none;
+    height: 120px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 5px rgba(8, 8, 8, 0.265);
+    color: black;
+}
+
+#info{
+    width: 100%;
+    margin-right: 20px;
+}
+
+#info h2{
+    font-size: 22px;
+}
+
+#info p{
+    font-size: 18px;
+}
+
+.matricula {
+    width: 100%;
+    text-align: center;
+    background-color: #458ac9;
+    color: white;
+    padding-top: 45px;
+    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 0 4px rgb(43, 42, 42);
+}
+
+.matricula h2{
+    font-size: 20px;
+}
+
+
+.cursagem_dois {
+    width: 100%;
+    text-align: center;
+    background-color: #f68b1f;
+    padding-top: 33px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 0 4px rgb(43, 42, 42);
+}
+
+.cursagem_umalinha {
+    width: 100%;
+    text-align: center;
+    background-color: #f68b1f;
+    padding-top: 45px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 0 4px rgb(43, 42, 42);
+}
+
+.matricula_p {
+    width: 100%;
+    text-align: center;
+    background-color: #458ac9;
+    color: white;
+    padding-top: 35px;
+    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 0 4px rgb(43, 42, 42);
+}
+
+.matricula_p h2{
+    font-size: 20px;
+}
+
+.matricula:active{
+    background-color: #458ac9;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Estilização_comunicação*/
+.cursagem_separado_comunic {
+    width: 100%;
+    background-color: #f68b1f;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    font-size: 21px;
+    box-shadow: 0 0 4px rgb(43, 42, 42);
+}
+
+.infoCurso_comunic { 
+    text-align: center;
+    background-color: rgb(201, 198, 198);
+    border: none;
+    height: 140px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 5px rgba(8, 8, 8, 0.265);
+    color: black;
+}
+
+.matricula_comunic {
+    width: 100%;
+    text-align: center;
+    background-color: #458ac9;
+    color: white;
+    padding-top: 50px;
+    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 0 4px rgb(43, 42, 42);
+    font-size: 15px;
+}
+
+.matricula_comunic:active{
+    background-color: #458ac9;
+    color: white;
+    transform: scale(1.1);
+}
+
+/*                       */
